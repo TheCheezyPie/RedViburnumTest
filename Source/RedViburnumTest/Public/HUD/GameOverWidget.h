@@ -19,7 +19,7 @@ class REDVIBURNUMTEST_API UGameOverWidget : public UUserWidget
 public:
 	virtual void NativeConstruct() override;
 
-	void Initialize(bool bPlayerWon);
+	void InitializeWidget(bool bPlayerWon);
 
 protected:
 	UFUNCTION()

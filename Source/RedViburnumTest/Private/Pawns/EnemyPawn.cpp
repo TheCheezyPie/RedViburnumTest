@@ -3,6 +3,7 @@
 
 #include "Pawns/EnemyPawn.h"
 #include "Pawns/PlayerPawn.h"
+#include "AIController.h"
 #include "UsefulMacros.h"
 
 AEnemyPawn::AEnemyPawn() : Super()

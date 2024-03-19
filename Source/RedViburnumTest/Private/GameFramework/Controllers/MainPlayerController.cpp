@@ -36,7 +36,7 @@ void AMainPlayerController::GameHasEnded(AActor* EndGameFocus, bool bIsWinner)
 
 	SpawnGameOverWidget(bIsWinner);
 
-	FInputModeGameAndUI InputMode;
+	FInputModeUIOnly InputMode;
 	SetInputMode(InputMode);
 
 	bShowMouseCursor = true;
@@ -61,7 +61,7 @@ void AMainPlayerController::SpawnGameOverWidget(bool bIsWinner)
 		if (GameOverWidget)
 		{
 			GameOverWidget->AddToViewport();
-			GameOverWidget->Initialize(bIsWinner);
+			GameOverWidget->InitializeWidget(bIsWinner);
 		}
 	}
 }

@@ -14,7 +14,7 @@ void UGameOverWidget::NativeConstruct()
 	QuitButton->OnClicked.AddDynamic(this, &UGameOverWidget::QuitGame);
 }
 
-void UGameOverWidget::Initialize(bool bPlayerWon)
+void UGameOverWidget::InitializeWidget(bool bPlayerWon)
 {
 	if (bPlayerWon)
 	{
